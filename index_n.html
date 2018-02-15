@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Multiple Logistic Regression</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="pics/snakemake_logo.svg" rel="icon" type="image/x-icon" />
+	<!-- CSS Stle -->
+	<link rel="stylesheet" href="lib/shower/themes/styles/screen-16x10.css">
+	<link rel="stylesheet" href="lib/highlight/styles/github.css" type="text/css"/>
+		<style>
+			.caption p {
+				font-size: 0.6em;
+			}
+			.slide.mid h2 {
+				font-size: 110px;
+				font-family: Tahoma;
+				font-weight: 300;
+				color: white;
+				line-height: 1.25em;
+				text-shadow: 1px 1px 3px black;
+				top: 36%;
+				position: absolute;
+			}
+			.citation pre {
+				text-align: left;
+			}
+			pre.medium {
+				font-size: 0.75em;
+			}
+			pre.medium code {
+				line-height: 1.5em;
+			}
+			pre.small {
+				font-size: 0.5em;
+			}
+			pre.small code {
+				line-height: 1.5em;
+			}
+
+			.sidenote {
+				border: 2px dashed #9e9e9e;
+				position: absolute;
+				padding: 1em;
+				line-height: 1.5em;
+				color: #9e9e9e;
+			}
+			.sidenote p {
+				margin-bottom: 0px;
+			}
+
+		</style>
+</head>
+<body class="shower list">
+	<!-- Header in overview -->
+	<header class="caption">
+		<h1>Multiple Logistic Regression</h1>
+		<p>Heng-Yuan Tung (Henry)</a>, 2018-02-05</p>
+	</header>
+
+	<!-- Cover Slide -->
+	<section id="cover" class="slide no-number">
+		<h2 id="talk-header">Multiple Logistic Regression</h2>
+		<p id="talk-author">
+			By Henry
+		</p>
+		<img src="pics/NO1.jpg" class="cover w" alt="">
+		<style>
+
+			#talk-header {
+				color: #9e9e9e;
+				text-align: center;
+				font-size: 80px;
+				line-height: 1.3em;
+				text-shadow: -1px 1px 3px #000;
+				left: 45px;
+				top: 40px;
+				position: absolute;
+
+			}
+			#talk-author {
+				line-height: 1.2em;
+				text-shadow: -1px 1px 3px #000;
+				left: 765px;
+				bottom: 35px;
+				position: absolute;
+			}
+			#talk-author a,
+			#cover .back-to-overview {
+				color: #EDDC1C;
+			}
+			#cover p {
+				margin: 10px 0 0;
+				color: #FFF;
+				font-size: 32px;
+				opacity: 1;
+			}
+
+			#cover img {
+				opacity: 0.95;
+			}
+			#cover {
+				background: black;
+			}
+			#cover .back-to-overview {
+				color: #EDDC1C;
+				text-decoration: inherit; /* no underline */
+			}
+		</style>
+	</section>
+
+	<!-- Section: Intro -->
+	<section id='Intro' class='slide'>
+		<h2 id="talk-header">  </h2>
+		<p id="talk-author">
+		</p>
+		<img src="pics/Slide2.JPG" class="cover w" alt="">
+		<style>
+
+		</style>
+	</section>
+
+
+
+
+	<!-- Section: Multiple logistic regression -->
+	<section id="mlc" class="slide">
+		<h2 class="shout">Multiple logistic regression</h2>
+	</section>
+
+	<section id='mlc' class='slide'>
+		<img src="pics/Slide4.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='mlc' class='slide'>
+		<img src="pics/Slide5.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='mlc' class='slide'>
+		<img src="pics/Slide6.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='mlc' class='slide'>
+		<img src="pics/Slide7.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='mlc' class='slide'>
+		<img src="pics/Slide8.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='test_pic' class='slide'>
+		<img src="pics/Slide9.JPG" class="cover w" alt="">
+	</section>
+
+	<!-- Section: Multiple 2x2 tables and the M-H test -->
+	<section id="22MH" class="slide">
+		<h2 class="shout">Multiple 2x2 tables and the M-H test</h2>
+	</section>
+
+	<section id='22MH' class='slide'>
+		<img src="pics/Slide11.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='22MH' class='slide'>
+		<img src="pics/Slide12.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='22MH' class='slide'>
+		<img src="pics/Slide13.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='22MH' class='slide'>
+		<img src="pics/Slide14.JPG" class="cover w" alt="">
+	</section>
+
+	<!-- Section: Using logistic regression -->
+	<section id="lr" class="slide">
+		<h2 class="shout">Using logistic regression</h2>
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide16.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide17.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide18.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide19.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide20.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide21.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide22.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide23.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide24.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide25.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide26.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide27.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide28.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide29.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide30.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide31.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide32.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide33.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide34.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide35.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide36.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide37.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide38.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide39.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide40.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide41.JPG" class="cover w" alt="">
+	</section>
+
+	<!-- Section: Assessing model fit -->
+	<section id="model_fit" class="slide">
+		<h2 class="shout">Assessing<br>model fit</h2>
+	</section>
+
+	<section id='model_fit' class='slide'>
+		<img src="pics/Slide43.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='model_fit' class='slide'>
+		<img src="pics/Slide44.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='model_fit' class='slide'>
+		<img src="pics/Slide45.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='model_fit' class='slide'>
+		<img src="pics/Slide46.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='model_fit' class='slide'>
+		<img src="pics/Slide47.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='model_fit' class='slide'>
+		<img src="pics/Slide48.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='model_fit' class='slide'>
+		<img src="pics/Slide49.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='model_fit' class='slide'>
+		<img src="pics/Slide50.JPG" class="cover w" alt="">
+	</section>
+	<section id='lr' class='slide'>
+		<img src="pics/Slide51.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide52.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='model_fit' class='slide'>
+		<img src="pics/Slide53.JPG" class="cover w" alt="">
+	</section>
+	<section id='lr' class='slide'>
+		<img src="pics/Slide54.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='lr' class='slide'>
+		<img src="pics/Slide55.JPG" class="cover w" alt="">
+	</section>
+
+	<section id='model_fit' class='slide'>
+		<img src="pics/Slide56.JPG" class="cover w" alt="">
+	</section>
+
+	<!-- End Slide -->
+	<section id='end' class='slide no-number'>
+		<h2>  </h2>
+		<img src="pics/MG1.jpg" class="cover w" alt="">
+		<p id="happy">Thank you </br>Happy Mardi Gras!</p>
+		<style>
+			#end h2 {
+			}
+			#happy {
+				color: #EEE;
+				text-align: left;
+				font-size: 40px;
+				line-height: 1.3em;
+				text-shadow: -1px 1px 3px #000;
+				top: 70px;
+				position: absolute;
+			}
+		</style>
+	</section>
+
+	<!-- END OF SLIDE CONTENT -->
+	<!--
+	To hide progress bar from entire presentation
+	just remove “progress” element.
+	-->
+	<div class="progress"></div>
+	<footer class="badge">
+		<a href="https://github.com/sunevcshuslrtak/sunevcshuslrtak.github.io">
+			<svg viewBox="0 0 81 79" aria-hidden="true">
+				<path d="M40.5 0a40.5 40.5 0 0 0-12.8 78.93c2 .37 2.76-.88 2.76-2s0-3.51-.05-6.89c-11.27 2.45-13.64-5.43-13.64-5.43-1.84-4.68-4.5-5.92-4.5-5.92-3.68-2.51.28-2.46.28-2.46 4.06.29 6.2 4.17 6.2 4.17 3.61 6.19 9.48 4.4 11.79 3.37a8.65 8.65 0 0 1 2.57-5.41c-9-1-18.45-4.5-18.45-20a15.65 15.65 0 0 1 4.17-10.87 14.57 14.57 0 0 1 .4-10.72s3.4-1.09 11.14 4.15a38.39 38.39 0 0 1 20.28 0c7.73-5.24 11.13-4.15 11.13-4.15a14.55 14.55 0 0 1 .4 10.72 15.63 15.63 0 0 1 4.16 10.87c0 15.56-9.47 19-18.49 20 1.45 1.25 2.75 3.72 2.75 7.5v11.11c0 1.08.73 2.34 2.78 1.95A40.51 40.51 0 0 0 40.5 0z"/>
+			</svg>
+			Sources<br>on GitHub
+		</a>
+	</footer>
+
+	<!-- Library -->
+	<script src="lib/shower/shower.min.js"></script>
+	<script src="lib/highlight/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		hljs.initHighlightingOnLoad();
+	</script>
+	<script>
+		// Emulate Esc key for special links so on mobile user can go back to list view
+		// A long term solution is to wait for Shower.js to expose its API
+		// Simulate Esc key solution from SO: https://stackoverflow.com/a/10520017
+		Podium = {};
+		Podium.keydown = function(k) {
+			var oEvent = document.createEvent('KeyboardEvent');
+
+			// Chromium Hack
+			Object.defineProperty(oEvent, 'keyCode', {
+						get : function() {
+							return this.keyCodeVal;
+						}
+			});
+			Object.defineProperty(oEvent, 'which', {
+						get : function() {
+							return this.keyCodeVal;
+						}
+			});
+
+			if (oEvent.initKeyboardEvent) {
+				oEvent.initKeyboardEvent("keydown", true, true, document.defaultView, false, false, false, false, k, k);
+			} else {
+				oEvent.initKeyEvent("keydown", true, true, document.defaultView, false, false, false, false, k, 0);
+			}
+
+			oEvent.keyCodeVal = k;
+
+			if (oEvent.keyCode !== k) {
+				alert("keyCode mismatch " + oEvent.keyCode + "(" + oEvent.which + ")");
+			}
+
+			document.dispatchEvent(oEvent);
+		}
+	</script>
+	<!-- Mathjax -->
+	<!-- online Mathjax CDN -->
+	<!--<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>-->
+</body>
+</html>
